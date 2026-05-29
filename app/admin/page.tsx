@@ -66,7 +66,7 @@ export default function AdminPage() {
 
   return (
     <main style={{ maxWidth: 1000, margin: "40px auto", fontFamily: "Arial", padding: 20 }}>
-      <h1>Admin cautions - La French Barca</h1>
+      <h1>Admin cautions bateau - La French Barca</h1>
 
       <div style={{ marginBottom: 20 }}>
         <input
