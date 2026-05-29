@@ -36,8 +36,8 @@ export async function POST(request: Request) {
           quantity: 1,
         },
       ],
-      success_url: `${process.env.APP_BASE_URL}/success?session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url: `${process.env.APP_BASE_URL}/`,
+    success_url: `${request.headers.get("origin")}/success?session_id={CHECKOUT_SESSION_ID}`,
+cancel_url: `${request.headers.get("origin")}/`,
     })
 
     return NextResponse.json({ url: session.url })
